@@ -33,7 +33,7 @@ If you're curious, check out the source — it's all in the `main` branch.
 
 <p align="left">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=html,css,github" />
+    <img src="https://skillicons.dev/icons?i=html,css,js,github" />
   </a>
 </p>
 
