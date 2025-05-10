@@ -3,73 +3,151 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>mhdned - Developer Portfolio</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        background: #fdfdfd;
-        color: #333;
-        padding: 2rem;
-        max-width: 800px;
-        margin: auto;
-        line-height: 1.6;
-      }
-      h1 {
-        color: #2c3e50;
-      }
-      ul {
-        padding-left: 1.2rem;
-      }
-      li {
-        margin-bottom: 0.5rem;
-      }
-      a {
-        color: #2980b9;
-        text-decoration: none;
-      }
-      a:hover {
-        text-decoration: underline;
-      }
-    </style>
+    <title>Pixel Art Portfolio</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="shortcut icon" href="./images/mhdned.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles/main.css" />
   </head>
   <body>
-    <h1>Hi, I'm mhdned 👋</h1>
-    <p>
-      Welcome to my personal GitHub Pages site. I'm a backend developer who
-      enjoys building tools, exploring data, and learning about system design
-      and AI.
-    </p>
+    <div class="container">
+      <header>
+        <div class="logo">MHDNED</div>
+        <nav>
+          <ul>
+            <li>
+              <a class="paragraph-font" href="https://github.com/mhdned"
+                >GITHUB</a
+              >
+            </li>
+            <li><a class="paragraph-font" href="#projects">PROJECTS</a></li>
+            <li><a class="paragraph-font" href="#about">ABOUT</a></li>
+            <li><a class="paragraph-font" href="#contact">CONTACT</a></li>
+            <li>
+              <button class="theme-toggle" id="themeToggle">DARK MODE</button>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-    <h2>🔧 Featured Projects</h2>
-    <ul>
-      <li>
-        <a href="https://github.com/FEZtool-team/FEZrs" target="_blank">
-          FEZrs – A toolkit for remote sensing analysis
-        </a>
-      </li>
-      <li>
-        <a href="https://github.com/mhdned/Imagiuo" target="_blank">
-          Imagiuo – AI-powered image search assistant
-        </a>
-      </li>
-      <li>
-        <a href="https://github.com/mhdned/Petiuo" target="_blank">
-          Petiuo – A sample pet adoption web app
-        </a>
-      </li>
-      <li>
-        <a href="https://github.com/mhdned/SmileDetection" target="_blank">
-          SmileDetection – Detect smiles using computer vision
-        </a>
-      </li>
-    </ul>
+      <section id="home" class="hero">
+        <div class="hero-text">
+          <h1>Hello, I'm Mahdi Nedaee</h1>
+          <p class="paragraph-font">
+            During my time in the Programming field, I realized that even though
+            our world as computer people is made of just 0 and 1, we can still
+            create amazing things with them.
+          </p>
+          <a href="https://github.com/mhdned?tab=repositories" class="btn"
+            >VIEW MY REPOS</a
+          >
+        </div>
+        <div class="hero-image">
+          <img src="./images/GitHubProfile.png" alt="Pixel art avatar" />
+        </div>
+      </section>
 
-    <h2>📫 Contact</h2>
-    <p>
-      You can find me on
-      <a href="https://github.com/mhdned" target="_blank">GitHub</a>.<br />
-      Feel free to check out my repositories or connect with me for
-      collaboration!
-    </p>
+      <section id="projects">
+        <h2>RECENT PROJECTS</h2>
+        <div class="projects">
+          <div class="project-card pixel-border">
+            <!-- <img src="" alt="Project 1" /> -->
+            <h3>FEZrs</h3>
+            <p class="paragraph-font">A toolkit for remote sensing analysis.</p>
+            <div class="skills">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">PyPi</span>
+            </div>
+          </div>
+          <div class="project-card pixel-border">
+            <!-- <img src="" alt="Project 2" /> -->
+            <h3>Imagiuo</h3>
+            <p class="paragraph-font">AI-powered image search assistant.</p>
+            <div class="skills">
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">Nest.js</span>
+              <span class="skill-tag">Typescript</span>
+            </div>
+          </div>
+          <div class="project-card pixel-border">
+            <!-- <img src="" alt="Project 3" /> -->
+            <h3>Petiuo</h3>
+            <p class="paragraph-font">
+              Raspberry pi pico board: a pet feeding device.
+            </p>
+            <div class="skills">
+              <span class="skill-tag">RaspberryPi</span>
+              <span class="skill-tag">Python</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <h2>ABOUT ME</h2>
+        <p class="paragraph-font" style="text-align: justify">
+          I'm Mehdi Nedaee. During my time in the Programming field, I realized
+          that even though our world as computer people is made of just 0 and 1,
+          we can still create amazing things with them. Maybe this vision feels
+          a bit outdated with quantum computing I'm a backend developer who's
+          always learning — not just to build showcase projects or chase money,
+          but to create real, useful software. I care about building
+          applications that are practical, well-designed, follow clean
+          architecture and standards, and above all, are easy for users to
+          interact with. That mindset pushed me to collaborate with the
+          <a class="link-text" href="https://github.com/FEZtool-team"
+            >FEZtool team</a
+          >
+          — working on both a web-based app and the
+          <a class="link-text" href="https://github.com/FEZtool-team/FEZrs"
+            >FEZrs</a
+          >
+          Python library for remote sensing tools. If you're curious, make sure
+          to check out the
+          <a class="link-text" href="https://github.com/FEZtool-team"
+            >FEZ organization</a
+          >!
+        </p>
+        <div class="skills">
+          <span class="skill-tag">Typescript</span>
+          <span class="skill-tag">Javascript</span>
+          <span class="skill-tag">Node.js</span>
+          <span class="skill-tag">Express.js</span>
+          <span class="skill-tag">Nest.js</span>
+          <span class="skill-tag">Jest.js</span>
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">FastAPI</span>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>GET IN TOUCH</h2>
+        <p class="paragraph-font">
+          Have a project in mind? Want to collaborate? Feel free to reach out!
+        </p>
+        <a href="mailto:mahdi.nedaee4@gmail.com" class="btn">SEND MESSAGE</a>
+      </section>
+
+      <footer>
+        <div class="social-icons">
+          <a href="https://github.com/mhdned"><i data-feather="github"></i></a>
+          <a href="https://instagram.com/mehtiuo"
+            ><i data-feather="instagram"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/mahdi-nedaee-232168242/"
+            ><i data-feather="linkedin"></i
+          ></a>
+        </div>
+        <p class="paragraph-font" style="font-weight: 400">
+          <span id="current-year"></span> MHDNED
+        </p>
+      </footer>
+      <script>
+        feather.replace();
+        document.getElementById("current-year").textContent =
+          new Date().getFullYear();
+      </script>
+    </div>
+
+    <script src="./javascript/main.js"></script>
   </body>
 </html>
